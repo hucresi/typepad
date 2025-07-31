@@ -1,73 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>React95 Notepad</title>
-    <script type="module">
-      import React, { useState } from "https://esm.sh/react";
-      import ReactDOM from "https://esm.sh/react-dom/client";
-      import { ThemeProvider } from "https://esm.sh/styled-components";
-      import {
-        Window,
-        WindowHeader,
-        WindowContent,
-        Button,
-        TextArea,
-        Toolbar
-      } from "https://esm.sh/@react95/core";
-      import original from "https://esm.sh/@react95/themes/original";
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html lang="tr">
 
-      const App = () => {
-        const [text, setText] = useState("");
+<head>
 
-        return React.createElement(
-          ThemeProvider,
-          { theme: original },
-          React.createElement(
-            Window,
-            { style: { width: "400px", margin: "2rem auto" } },
-            React.createElement(
-              WindowHeader,
-              null,
-              React.createElement("span", null, "Notepad.exe")
-            ),
-            React.createElement(
-              Toolbar,
-              null,
-              React.createElement(Button, { size: "sm" }, "File"),
-              React.createElement(Button, { size: "sm" }, "Edit"),
-              React.createElement(Button, { size: "sm" }, "Help")
-            ),
-            React.createElement(
-              WindowContent,
-              null,
-              React.createElement(TextArea, {
-                width: "100%",
-                height: 150,
-                value: text,
-                onChange: (e) => setText(e.target.value),
-                placeholder: "Type your notes here..."
-              })
-            )
-          )
-        );
-      };
+<meta charset="UTF-8">
 
-      const rootElement = document.getElementById("root");
-      if (rootElement) {
-        const root = ReactDOM.createRoot(rootElement);
-        root.render(React.createElement(App));
-      }
-    </script>
-    <style>
-      body {
-        margin: 0;
-        font-family: sans-serif;
-        background-color: #008080;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<title>elektron</title>
+
+</head>
+
+<body>
+
+<h1>Index of /elektron</h1>
+<table style="border: 0px #000 solid;" width="25%">
+   <tr><th valign="top"><img src="icons/blank.gif" alt="[ICO]"></th><th><a href="#">Name</a></th><th><a href="#">Last modified</a></th></tr>
+   <tr><th colspan="4"><hr></th></tr>
+<tr><td valign="top"><img src="icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td></tr>
+<tr><td valign="top"><img src="icons/text.gif" alt="[TXT]"></td><td><a href="#">02</a></td><td align="right">2017-03-04 20:08  </td></tr>
+<tr><td valign="top"><img src="icons/text.gif" alt="[TXT]"></td><td><a href="#">01</a></td><td align="right">2017-03-04 20:08  </td></tr>
+<tr><td valign="top"><img src="icons/text.gif" alt="[TXT]"></td><td><a href="#">03</a></td><td align="right">2017-03-04 20:08  </td></tr>
+<tr><th colspan="4"><hr></th></tr>
+</table>
+
+<h1>degil.org Archive</h1>
+
+<p>See <a href="#" target='_blank'>retrospektif elektron</a> if you are not depressed enough yet.</p>
+
+<h2>Current Releases</h2>
+
+<p>Some releases are available on some sources:</p>
+
+<blockquote>
+<dl>
+
+<dt><a href="https://www.youtube.com/playlist?list=PLs5aWECdIerFxxciFhhRVVxpzPhXQZGRb" target='_blank'>robot dünyası</a></dt>
+<dd>is avaliable on <a href="https://www.youtube.com/@hayvanhucresi" target='_blank'>YouTube</a>.</dd>
+
+<dt><a href="https://www.youtube.com/playlist?list=PLs5aWECdIerH93TKgGEEqMZbg5XrxfNCl" target='_blank'>ağlayarak cimere</a></dt>
+<dd>seems inactive but is still available on <a href="https://www.youtube.com/@hayvanhucresi" target='_blank'>YouTube</a>.</dd>
+
+<dt><a href="https://shutterisrafi.com" target='_blank'>shutter israfı</a></dt>
+<dd>no more updating but still available.</dd>
+
+<dt><a href="https://degil.org/storiez" target='_blank'>storiez</a></dt>
+<dd>not updating currently but inevitably, one day</dd>
+
+<dt><a href="https://derdo.ltd" target='_blank'>derdo ltd</a></dt>
+<dd>same shit as <a href="https://shutterisrafi.com" target='_blank'>shutter israfı</a> but different skin.</dd>
+
+<dt><a href="http://souvenir.rest" target='_blank'>istifçi</a></dt>
+<dd>bu yoktu anasını satiyim içimden geldi</dd>
+
+</dl>
+</blockquote>
+
+<h2>Old Releases</h2>
+
+<blockquote>
+<dl>
+
+<dt><a href="https://web.archive.org/web/20161007132937/http://muzikli.org/" target='_blank'>müzikli org</a></dt>
+<dd>mediocre old days</dd>
+
+<dt><a href="https://www.youtube.com/@sistematikgoygoy9848" target='_blank'>sistematik goygoy</a></dt>
+<dd>not really necessary</dd>
+</dl>
+</blockquote>
+
+<h2>Misc.</h2>
+
+<table border="0" summary="miscellaneous">
+<tr><td><a href="https://twitter.com/dorukcan">twitter</a></td> <td> not x</td></tr>
+<tr><td><a href="https://www.flickr.com/photos/serindo/" target='_blank'>flickr</a></td> <td> no more updates</td></tr>
+<tr><td><a href="https://vimeo.com/user45899192" target='_blank'>vimeo</a></td> <td> i tried</td></tr>
+<tr><td><a href="https://www.youtube.com/channel/UCBnuGKRCdubgz1zWJ8YIdNg" target='_blank'>youtube</a></td> <td> still tryin</td></tr>
+<tr><td><a href="mailto:hotmail@degil.org">mail</a></td> <td><span style="font-family: 'Courier New', monospace;"> hotmail<i>[at]</i>degil<i>[dot]</i>org</span> <small>wanna write?</small></td></tr>
+
+</table>
+
+</body>
 </html>
+</body></html>
